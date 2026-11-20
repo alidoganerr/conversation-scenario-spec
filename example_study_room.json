@@ -1,0 +1,37 @@
+{
+  "id": "study-room-booking",
+  "title": "Booking a library study room that is already taken",
+  "version": "1.0.0",
+  "language": "en",
+  "setting": {
+    "situation": "A student writes to the library chat on Tuesday asking for a group study room for four people on Thursday from 2 to 4 pm. Every group room is booked for that slot.",
+    "channel": "text",
+    "max_turns": 10
+  },
+  "participant": {
+    "role": "Library assistant",
+    "brief": "The booking system shows a free group room on Thursday from 4 to 6 pm and a two-person booth at 2 pm. There is a waiting list for cancellations. Rooms can only be booked for the current week."
+  },
+  "counterpart": {
+    "name": "Tomás Reyes",
+    "role": "Second-year engineering student",
+    "background": "Has a group presentation on Friday morning and has never used the room booking system before.",
+    "starting_mood": "In a hurry, polite"
+  },
+  "objective": "End the chat with a room the group can use, or with the student on the waiting list and knowing how it works.",
+  "opening_message": "hi, can i book a group room for thursday 2-4? there are 4 of us",
+  "key_moments": [
+    {
+      "id": "slot-taken",
+      "description": "Telling the student the 2 to 4 slot is full."
+    },
+    {
+      "id": "alternatives",
+      "description": "Which of the later room, the booth or the waiting list comes up, and in what order."
+    },
+    {
+      "id": "wrap-up",
+      "description": "What has actually been booked when the chat ends."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "it-support-triage",
+  "title": "Helpdesk call about a laptop that will not connect",
+  "version": "1.0.0",
+  "language": "en",
+  "setting": {
+    "situation": "An employee calls the IT helpdesk because their laptop cannot join the office wifi and they have a client call in forty minutes.",
+    "channel": "voice",
+    "max_turns": 14
+  },
+  "participant": {
+    "role": "Helpdesk technician",
+    "brief": "Your remote tools can reset the laptop's network profile. There is one spare laptop at the front desk until 5 pm. Hardware repairs go to an outside vendor and usually take two or three days."
+  },
+  "counterpart": {
+    "name": "Priya Nair",
+    "role": "Account manager",
+    "background": "Works from the office three days a week. Fine with most software, lost when it comes to network settings.",
+    "starting_mood": "Watching the clock"
+  },
+  "objective": "Get Priya online, on her own laptop or the spare, before the 3 pm call.",
+  "opening_message": "Hi, my laptop will not connect to the wifi at all and I have a client call at three. Can you help?",
+  "key_moments": [
+    {
+      "id": "opening",
+      "description": "First questions: which network, what error, whether anything changed recently."
+    },
+    {
+      "id": "fix",
+      "description": "The profile reset, and how the steps are explained over the phone."
+    },
+    {
+      "id": "fallback",
+      "description": "Bringing up the spare laptop if the reset does not work in time."
+    },
+    {
+      "id": "close",
+      "description": "What happens to the broken laptop after the call."
+    }
+  ]
+}

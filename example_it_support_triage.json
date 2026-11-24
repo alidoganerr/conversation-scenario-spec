@@ -13,12 +13,12 @@
     "brief": "Your remote tools can reset the laptop's network profile. There is one spare laptop at the front desk until 5 pm. Hardware repairs go to an outside vendor and usually take two or three days."
   },
   "counterpart": {
-    "name": "Priya Nair",
+    "name": "Selin Aksoy",
     "role": "Account manager",
     "background": "Works from the office three days a week. Fine with most software, lost when it comes to network settings.",
     "starting_mood": "Watching the clock"
   },
-  "objective": "Get Priya online, on her own laptop or the spare, before the 3 pm call.",
+  "objective": "Get Selin online, on her own laptop or the spare, before the 3 pm call.",
   "opening_message": "Hi, my laptop will not connect to the wifi at all and I have a client call at three. Can you help?",
   "key_moments": [
     {

@@ -2,7 +2,7 @@
 
 A JSON format for describing a practice conversation, and a validator for it.
 
-I wanted a plain file that a role-play script, a chatbot test or a training exercise could all read, without tying it to any one tool. So it stays small on purpose: who is talking, where, what they're trying to get done, and which moments are worth looking at afterwards.
+One plain file that a role-play script, a chatbot test or a training exercise can all read, without tying it to a particular tool. It stays small: who is talking, where, what they're trying to get done, and which moments are worth looking at afterwards.
 
 ## Fields
 
@@ -16,16 +16,14 @@ I wanted a plain file that a role-play script, a chatbot test or a training exer
 
 The full JSON Schema is in `scenario.schema.json`. There are two examples, `example_study_room.json` and `example_it_support_triage.json`. The people in them are made up.
 
-## Running it
+## Checking a file
 
 ```
 python3 validate.py example_*.json
 ```
 
-It prints every problem it finds and exits with 1 if any file is invalid, so it works as a CI step. Standard library only, Python 3.9+.
+It prints every problem it finds and exits with 1 if any file is invalid, so it works as a CI step.
 
 The validator is a little stricter than the schema: it also rejects strings that are only whitespace.
 
 Tests: `python3 -m unittest`
-
-Ali Doğaner. MIT licensed.
